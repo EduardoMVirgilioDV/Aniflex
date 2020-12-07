@@ -1,0 +1,351 @@
+/*Fuente*/
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+h5 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+/*Textos*/
+
+.titulo-principal{
+    text-align: center;
+}
+
+/*ajuste de imagenes*/
+
+img {
+    max-width: 100%;
+}
+
+.section-img img {
+    vertical-align: middle;
+}
+
+/*contenedor de imagen y texto*/
+
+.contenido{
+    background-color: rgb(235, 235, 235);
+    color: #141414;
+    padding: 1rem;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.contenido-sinborde{
+    background-color: rgb(235, 235, 235);
+    color: #141414;
+    padding: 1rem;
+}
+
+.imagen-borde{
+    box-shadow: 0px 10px 6px -4px rgba(0,0,0,0.6);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.img-center {
+    margin: 0%;
+    text-align: center;
+}
+
+.imagenes-multiples {
+    display: flex;
+}
+
+.imagenes-multiples > * {
+    margin: 0 .25rem;
+}
+
+/*separacion*/
+
+.espacio-bajo{
+    padding-bottom: 1em;
+}
+
+.espacio-izq{
+    padding-right: 1em;
+}
+
+.espacio-der{
+    padding-left: 1em;
+}
+
+.espacio-arriba{
+    padding-top: 1em;
+}
+
+/*Logo*/
+
+.logo_aniflex{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+/*Perfil fundadores*/
+
+.imgRedonda {
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+    border-radius: 370px;
+}
+
+.fundadores{
+    text-align: center;
+    color: #E01F32;
+}
+
+.contenedor-fundadores{
+    margin: 0.5em;
+    padding: 1em;
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px 10px 10px 10px;
+}
+
+/*video*/
+
+.media {    
+	max-width: 100%;
+	min-height: auto; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.media video {
+	height: auto;
+	max-width: 100%;
+}
+
+/*anime*/
+
+.texto-anime{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    color: #141414;
+}
+
+.contenido-anime{
+    margin: 0 0 1em 0;
+    background-color: rgb(235, 235, 235);
+    color: #141414;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.espacio-anime{
+    margin: 0 1em 0 1em;
+}
+
+.boton{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.centrado-boton{
+    text-align: center;
+}
+
+.linea{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linea > * {
+    margin: .25rem;
+}
+
+.botones-anime{
+    background-color: #E01F32;
+    color: #f4f4f4;
+    padding: 0.5rem;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/*Comentarios*/
+
+.titulo-rojo{
+    color: #E01F32;
+}
+
+.comentario{
+    background-color: rgb(235, 235, 235);
+    color: #141414;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.comentario-centrado{
+    text-align: center;
+}
+
+.comentario-nombre{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #000000;
+}
+
+.comentario-mail{
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #000000;
+}
+
+
+.comentario-comentarios{
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #000000;
+}
+
+.ui-page-theme-a .ui-btn,
+html .ui-bar-a .ui-btn,
+html .ui-body-a .ui-btn,
+html body .ui-group-theme-a .ui-btn,
+html head + body .ui-btn.ui-btn-a {
+    transition: all .5s;
+}
+
+.fila-form {
+    margin-bottom: 1.5rem;
+}
+
+.notificacion-exito {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #cfc;
+    color: #252;
+}
+
+/*Noticias*/
+
+.imagenes-noticias {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagenes-noticias > * {
+    margin: .25rem;
+}
+
+.noticias-tamanio{
+    width: 150px;
+    height: 150px;
+}
+
+/*footer*/
+
+.ui-page-theme-a .mi-footer {
+        text-align: center;
+        padding: 1em;
+    }
+
+/*menu*/    
+
+#menu .ui-panel-inner {
+    padding: 0;
+}
+
+#menu .ui-listview {
+    margin: 0;
+}
+
+
+.jconfirm {
+    color: #333;
+}
+
+#btnmodonocturno{
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  font-size:  1rem;
+  color: white;
+
+}
+
+.rated {
+  background-color: yellow !important;
+}
+
+.rating a {
+  border: 0px !important;
+}
+
+    .onoffswitch {
+        position: relative; width: 90px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    }
+    .onoffswitch-checkbox {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #999999; border-radius: 20px;
+    }
+    .onoffswitch-inner {
+        display: block; width: 200%; margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+    }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        box-sizing: border-box;
+    }
+    .onoffswitch-inner:before {
+        content: "ON";
+        padding-left: 10px;
+        background-color: #34A7C1; color: #FFFFFF;
+    }
+    .onoffswitch-inner:after {
+        content: "OFF";
+        padding-right: 10px;
+        background-color: #EEEEEE; color: #999999;
+        text-align: right;
+    }
+    .onoffswitch-switch {
+        display: block; width: 18px; margin: 6px;
+        background: #FFFFFF;
+        position: absolute; top: 0; bottom: 0;
+        right: 56px;
+        border: 2px solid #999999; border-radius: 20px;
+        transition: all 0.3s ease-in 0s; 
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+    }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px; 
+    }
