@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.aniflex.apps2019"
+    version     = "0.0.1">
+
+    <name>Aniflex</name>
+
+    <description>
+      Aniflex es una app donde te vas enterar lo ultimo de anime y manga, muchas cosas más. 
+    </description>
+
+    <author href="https://davinci.edu.ar" email="carolina.herrera1@davinci.edu.ar">
+      Aniflex
+    </author>
+
+    <preference name="permissions" value="none"/>
+    <preference name="orientation" value="default"/>
+
+    <plugin name="cordova-plugin-splashscreen" spec="5.0.3" />
+
+    <icon src="imgs/icon.png"/>
+
+    <splash src="ruta/al/splash.png"/>
+
+</widget>

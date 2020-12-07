@@ -1,0 +1,10 @@
+Alumnos: Carolina B. Herrera
+         Mauricio A. Mérida
+Docente: Santiago Gallino 
+Carrera: Diseño Multimedial 
+Materia: Desarrollo de Aplicaciones Multiplataforma
+Cuatrimestre: Quinto Cuatrimestre
+Año: 2019
+Turno: Tarde
+Comision: A
+Caracte de entrega: (Final)

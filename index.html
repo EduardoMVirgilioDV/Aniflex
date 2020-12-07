@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniflex</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aniflex.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="css/jquery-confirm.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/jquery-confirm.min.js"></script>
+    <script src="js/lightcase.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/comentario.js"></script>
+    
+    <script>
+        $(function() {
+            $('#menu').panel();
+            $('#menu [data-role=listview]').listview();
+        })
+    </script>
+
+</head>
+
+<!--
+    Índice:
+    
+    [1]. Home
+    [2]. Nosotros
+    [3]. Animes
+    [3.1]. Descripción Anime
+    [4]. Manga
+    [5]. Formulario
+    [5.1]. Comentario
+	[5.1]. Mi lista
+
+
+    -->
+
+<body>
+    <nav data-role="panel" id="menu" data-display="overlay" data-theme="b">
+        <img class="logo_aniflex" src="imgs/logo.png" alt="logo-aniflex">
+        <ul data-role="listview">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#animes">Animes</a></li>
+            <li><a href="#mangas">Mangas</a></li>
+			<li><a href="#lista">Mi lista</a></li>
+			<li>Modo oscuro<div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+        <label class="onoffswitch-label" for="myonoffswitch"id="btnmodonocturno">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+				</label>
+				</div></li>
+
+        </ul>
+    </nav>
+
+    <!--[1]. Inicio de la pagina-->
+
+    <section data-role="page" id="home">
+        <header data-role="header">
+            <h1>Inicio</h1>
+            <a href="#menu">Menú</a>
+        </header>
+        
+        <div class="ui-content" role="main"> 
+            <section class="img-center section-img">
+                <a href="#nosotros"><img src="imgs/banner-nosotros.jpg" alt="Banner nosotros Aniflex" class="banner-nosotros"></a>
+            </section>
+            <section class="contenido-sinborde">
+                    <p>Esta sección solo muestra las noticias más destacadas de los últimos tiempos, si quieres leer más, puedes ir a la sección noticias que vas encontrar contenidos más recientes.</p>
+            </section>
+            <section class="imagenes-multiples espacio-bajo">
+                    <a href="#finalNaruto"><img src="imgs/naruto-sasuke-portada.jpg" alt="Portada Final de Naruto Shippuden"></a>
+                    <a href="#nuevaTemporadaBoku"><img src="imgs/boku-no-hero-academia.jpg" alt="Portada de la nueva temporada de Boku No Hero Academia"></a>
+            </section>
+            <section class="img-center">
+                <a href="#nuevaGeneracionPokemon"><img src="imgs/portada-nuevagenetacion-pokemon.jpg" alt="Nueva generación de Pokémon"></a>
+            </section>
+        </div>          
+    </section>
+
+    <!--Final Inicio-->
+
+    <!--[1.1].Nosotros-->
+
+    <section data-role="page" id="nosotros">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1>Nosotros</h1>
+        </header>
+
+        <div class="ui-content" role="main">
+            <section class="contenido">
+                <section class="img-center section-img">
+                    <img src="imgs/portada-nosotros.jpg" alt="Portada nosotros" class="imagen-borde">
+                </section>    
+                <h2 class="titulo-principal">¡Nosotros somos Aniflex!</h2>
+                <p>Hola lectores, somos Aniflex, tenemos como objetivo brindarte un amplio catálogo de animes y compartir con todos nuestros seguidores la mayor cantidad de episodios y series que salen cada año...</p>
+                <h2 class="titulo-principal fundadores">EQUIPO ‘Aniflex’</h2>
+
+                <section class="contenedor-fundadores">
+                    <section class="img-center">
+                        <img src="imgs/carolina.png" alt="perfil Carolina Belen Herrera" class="imgRedonda">                    
+                            <h3 class="titulo-principal">Carolina Belen Herrera</h3>
+                            <p class="fundadores">Fundador y Administrador</p>
+                            <p>Soy estudiante de Diseño Multimedial. Me gusta el anime desde muy pequeña, gracias a mis primos que me llevaban un local que se llama Camelot, donde compraba los mangas de Ranma ½ y Dragon Ball y gracias a las series de Magic Kids, que trasmitían Sailor Moon y Pokémon, hasta hoy sigo mirando anime.</p>
+                    </section>
+                </section>
+
+                <section class="contenedor-fundadores">
+                    <section class="img-center">
+                    <img src="imgs/mauricio.png" alt="perfil Carolina Belen Herrera" class="imgRedonda">                    
+                        <h3 class="titulo-principal">Mauricio A. Mérida</h3>
+                        <p class="fundadores">Fundador y Administrador</p>
+                        <p>Estudiante de Diseño Multimedial. Encontré mi gusto por el anime a los 14 años, ya desde chico miraba sin saber que era anime. Me gusta ver y dar mi opinión de los animes que veo.</p>
+                    </section>
+                </section>
+            </section>
+        </div>
+
+        <footer data-role="footer" class="mi-footer">
+            <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+
+    <!--Final Nosotros-->
+
+
+    <!--[3]. Comienzo animes-->
+
+    <section data-role="page" id="animes">
+                 <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+             <h1>Anime</h1>
+        </header>
+        <div class="ui-content" role="main">
+            <section class="contenido-sinborde">
+                <section class="texto-anime">
+                    <h3 class="titulo-principal">En esta sección va a encontrar anime para mirar, descripciones, episodios, genero, etc… esperamos que lo disfrutes.</h3>
+                </section>
+            </section>
+        </div>
+        <div class="ui-content" role="main">
+			<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar anime...">
+            </ul>
+        </div>
+        <footer data-role="footer" class="mi-footer">
+                <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+
+    <!--Final anime-->
+
+    <!-- [3.1]. Comienzo descripciones Anime -->
+
+    <section data-role="page" id="anime">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1 id="anime-title-header">Domestic na Kanojo</h1>
+        </header>
+        
+        <div class="ui-content" role="main">
+            <section class="contenido-anime">
+                <section class="img-center">
+                    <img id="anime-content-banner" src="imgs/domestic-na-kanojo-banner.jpg" alt="Banner Domestic na Kanojo" class="img-anime">
+                </section>
+                <section class="texto-anime">            
+                    <h2 class="titulo-principal" id="anime-content-title">Domestic na Kanojo</h2>
+                    <p>Sinopsis:</p>
+                    <p id="anime-content-sinopsis"></p>
+                    <p>Estado: <span id="anime-content-state"></span> </p>
+                    <p>Capitulos: <span id="anime-content-caps"></span></p>
+                    <p>Genero:</p>
+                    <section class="linea" id="anime-content-genres">
+                        <p class="botones-anime">Drama</p>
+                    </section>
+				</section>
+            </section>
+
+            <!--Comentario-->
+
+            <h3 class="titulo-principal fundadores">No te olvides dejarnos un comentario</h3>
+
+            <section class="centrado-boton">
+                <a href="#nuevo-comentario" id="anime-content-coments" data-anime="1" class="agregar-comentario-link ui-btn ui-btn-inline boton">Agregar comentario</a>
+            </section>
+
+            <!--Final de comentario-->
+            
+            <!--ver Comentarios-->
+
+            <div class="ui-content" role="main"> 
+
+                <h2 class="titulo-principal fundadores">Comentarios</h2>
+                <div class="ui-content" role="main">              
+                <div id="status"></div>
+                <button id="lista-comentarios-ordenar">Order por notas de mayor a menor</button>
+                <section id="anime-content-list-coments" class="lista-comentarios">
+                
+                </section>   
+                </div>
+            </div>
+        </div>
+        
+        <footer data-role="footer" class="mi-footer">
+            <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+		
+    </section>
+ 
+    <!--Final ver Comentarios-->
+			
+			
+    <!--nuevo Comentario Domestic-->
+			
+    <section data-role="page" id="nuevo-comentario">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1>Formulario</h1>
+        </header>
+
+        <div class="ui-content" role="main">        
+            <section class="contenido">
+                <form action="" id="form-nuevo-comentario">
+
+                    <h3>Comentario de Domestic na Kanojo</h3> 
+
+                    <input type="hidden" name="anime" value="1">
+
+                    <div class="fila-form">
+                        <label for="cantidad">Capitulo por el que vas</label>
+                        <input type="number" id="cantidad" step="1" min="1" max="12">
+                    </div>
+
+                    <div class="fila-form">
+                        <label for="atencio">Que te llamo la atención</label>
+                        <select name="atencion" id="atencion">
+                            <option value="Historia">Historia</option>
+                            <option value="Personajes">Los personajes</option>
+                            <option value="Dibujo">Estilo de dibujo</option>
+                            <option value="Paisajes">Paisajes</option>
+                            <option value="Colores">Colores</option>
+                        </select>
+                    </div>
+
+                    <div class="fila-form">
+                        <label for="calificacion">Puntuacion temporal</label>
+                        <select name="calificacion" id="calificacion">
+                            <option value="Malo">Malo</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Bueno">Bueno</option>
+                            <option value="Muy Bueno">Muy bueno</option>
+                            <option value="Excelente">Excelente</option>
+                        </select>
+                    </div>
+                    
+                    <div class="fila-form">
+                        <label for="comentarios">Comentario</label>
+                        <textarea id="comentarios"></textarea>
+                    </div>
+
+                    <button type="submit" id="agregar-comentario">
+                        Enviar
+                    </button>
+                </form>
+            </section>
+        </div>
+    </section>
+		  <!--final nuevo Comentario Domestic-->
+
+        <!--[3.2]. Yakusoku no Neverland-->
+
+    <section data-role="page" id="yakusoku">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1>Yakusoku no Neverland</h1>
+        </header>
+        
+        <div class="ui-content" role="main">
+            <section class="contenido-anime">
+                <section class="img-center">
+                    <img src="imgs/yakusoku-no-neverland-banner.jpg" alt="Banner Yakusoku no Neverland" class="img-anime">
+                </section>
+                <section class="texto-anime">            
+                    <h2 class="titulo-principal">Yakusoku no Neverland</h2>
+                    <p>Sinopsis:</p>
+                    <p>Por mucho que los niños la quieran, ella no es su madre. Viven juntos, pero no son familiares de sangre. Grace Field es un hogar al que son enviados los niños que no tienen padres. Un hogar irreemplazable para los 38 niños que allí viven felices su día a día, como si fueran hermanos, aunque al inicio fueran completos desconocidos. Al menos así era hasta que cierto descubrimiento cambió sus vidas por completo...</p>
+                    <p>Estado: Finalizado</p>
+                    <p>Capitulos: 12</p>
+                    <p>Genero:</p>
+                    <section class="linea">
+                        <p class="botones-anime">Ciencia Ficción</p>
+                        <p class="botones-anime">Misterio</p>
+                        <p class="botones-anime">Shounen</p>
+                        <p class="botones-anime">Terror</p>
+                    </section>
+                    <p>Si quieres ver la serie lo podes ver en en Animeflv</p>                    
+                    <section class="centrado-boton">
+                    <a href="https://www5.animeflv.cc/anime/yakusoku-no-neverland" class="ui-btn ui-btn-inline boton">Ver la serie</a>
+                    </section>
+                </section>
+            </section>
+            
+             <!--Comentario-->
+
+             <h3 class="titulo-principal fundadores">No te olvides dejarnos un comentario</h3>
+
+             <section class="centrado-boton">
+                 <a href="#nuevo-comentario" data-id="domestic" class="agregar-comentario-link ui-btn ui-btn-inline boton">Agregar comentario</a>
+                 <a href="#comentarios" class="ui-btn ui-btn-inline boton"> Ver Comentarios</a>
+             </section>
+ 
+             <!--Final de comentario-->
+
+        </div>
+
+        <footer data-role="footer" class="mi-footer">
+            <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+
+        <!--[3.3]. Doukyonin wa Hiza, Tokidoki, Atama no Ue-->
+
+    <section data-role="page" id="doukyonin">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1>Doukyonin wa Hiza</h1>
+        </header>
+        
+        <div class="ui-content" role="main">
+            <section class="contenido-anime">
+                <section class="img-center">
+                    <img src="imgs/doukyonin-wa-hiza-banner.jpg" alt="Banner Doukyonin wa Hiza, Tokidoki, Atama no Ue" class="img-anime">
+                </section>
+                <section class="texto-anime">            
+                    <h2 class="titulo-principal">Doukyonin wa Hiza, Tokidoki, Atama no Ue</h2>
+                    <p>Sinopsis:</p>
+                    <p>Subaru Mikazuki es un novelista que sufre el defecto de ser excesivamente tímido, lo que hace que le cueste mucho relacionarse con otras personas. Un día encuentra en la calle a un gato al que han abandonado en la calle y sobrevive como puede. Ambos forjarán amistad y acabarán viviendo juntos, contándonos esta serie su día a día a través tanto de los ojos del humano, como de los ojos del gato. Pequeños momentos que pueden parecer triviales al espectador, pero que al ir uniéndose, hace que ambos sientan que tienen un amigo de confianza en el otro y sean felices.</p>
+                    <p>Estado: Finalizado</p>
+                    <p>Capitulos: 12</p>
+                    <p>Genero:</p>
+                    <section class="linea">
+                        <p class="botones-anime">Comedia</p>
+                        <p class="botones-anime">Recuento de la vida</p>
+                    </section>
+                    <p>Si quieres ver la serie lo podes ver en en Animeflv</p>                    
+                    <section class="centrado-boton">
+                    <a href="https://www5.animeflv.cc/anime/doukyonin-wa-hiza-tokidoki-atama-no-ue" class="ui-btn ui-btn-inline boton">Ver la serie</a>
+                    </section>
+                </section>
+            </section>
+
+             <!--Comentario-->
+
+             <h3 class="titulo-principal fundadores">No te olvides dejarnos un comentario</h3>
+
+             <section class="centrado-boton">
+                 <a href="#nuevo-comentario" data-id="domestic" class="agregar-comentario-link ui-btn ui-btn-inline boton">Agregar comentario</a>
+                 <a href="#comentarios" class="ui-btn ui-btn-inline boton"> Ver Comentarios</a>
+             </section>
+ 
+             <!--Final de comentario-->
+            
+        </div>
+
+        <footer data-role="footer" class="mi-footer">
+            <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+
+        <!--Final descripciones Anime-->
+
+        <!--[4]. Comienzo manga-->
+
+    <section data-role="page" id="mangas">
+           <header data-role="header">
+            <a href="#menu">Menú</a>
+		    <h1>Manga</h1>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+        </header>
+
+        <div class="ui-content" role="main">
+            <section class="contenido-sinborde">
+                <section class="texto-anime">
+                    <h3 class="titulo-principal">En esta sección va a encontrar manga para mirar, descripciones, episodios, genero, etc… esperamos que lo disfrutes.</h3>
+                </section>
+            </section>
+        </div>
+
+        <div class="ui-content" role="main">
+			<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Buscar manga...">
+            <section class="contenido-anime">
+					<section class="img-center">
+						<img src="imgs/renai-metro-portada.jpg" alt="Portada Renai Metro" class="img-anime">
+					</section>
+					<section class="texto-anime">            
+						<h2 class="titulo-principal">Renai Metro</h2>
+						<p>Sinopsis:</p>
+						<p>Un amor no correspondido es como un Metro que corre bajo tierra". Nozomi, una estudiante universitaria siempre ha estado secretamente enamorada de su senpai Shusuke.</p>
+					</section>
+				</section>  
+
+				<section class="contenido-anime">
+					<section class="img-center">
+						<img src="imgs/fullmetal-alchemist-portada.jpg" alt="Portada Fullmetal Alchemist" class="img-anime">
+					</section>
+					<section class="texto-anime">            
+						<h2 class="titulo-principal">Fullmetal Alchemist</h2>
+						<p>Sinopsis:</p>
+						<p>La historia se centra en dos hermanos, Edward Elric y Alphonse Elric que rompieron el mayor tabú de la alquimia, la trasmutación humana al tratar de revivir a su fallecida madre...</p>
+					</section>
+				</section>
+
+				<section class="contenido-anime">
+					<section class="img-center">
+						<img src="imgs/moe-kare-portada.jpg" alt="Portada Moe Kare" class="img-anime">
+					</section>
+					<section class="texto-anime">            
+						<h2 class="titulo-principal">Moe Kare!!!</h2>
+						<p>Sinopsis:</p>
+						<p>Wakamiya Hikaru es una chica de 15 años común y corriente, que asiste a una escuela de secundaria solo para mujeres.</p>
+
+					</section>
+				</section>
+			</ul>
+        </div>
+
+        <footer data-role="footer" class="mi-footer">
+                <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+
+        <!--Final manga-->
+
+        <!--Descripcion de Manga-->
+
+            <!--[4.1]. Renai Metro-->
+
+    <section data-role="page" id="renai">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1>Renai Metro</h1>
+        </header>
+        
+        <div class="ui-content" role="main">
+            <section class="contenido-anime">
+                <section class="img-center">
+                    <img src="imgs/renai-metro-banner.jpg" alt="Benner Renai Metro" class="img-anime">
+                </section>
+                <section class="texto-anime">            
+                    <h2 class="titulo-principal">Renai Metro</h2>
+						<div class="rating" id="first">
+						  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="1" data-iconpos="notext"></a>
+						  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="2" data-iconpos="notext"></a>
+						  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="3" data-iconpos="notext"></a>
+						  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="4" data-iconpos="notext"></a>
+						  <a href="#" data-role="button" data-inline="true" data-icon="star" data-vote="5" data-iconpos="notext"></a>
+						  <b><span class="vote"></span></b>
+						</div>
+                    <p>Sinopsis:</p>
+                    <p>Un amor no correspondido es como un Metro que corre bajo tierra". Nozomi, una estudiante universitaria siempre ha estado secretamente enamorada de su senpai Shusuke. Desafortunadamente, él ya está en una dichosa relación con Moe-san, una belleza tan encantadora y de buen corazón que Nozomi no puede incluso tener resentimiento hacia ella. Un día, su amor unilateral es descubierto por nada menos que Atsushi, el hermano de Moe-san, y es donde comienzan los problemas de Nozomi...</p>
+                    <p>Estado: Finalizado</p>
+                    <p>Capitulos: 10</p>
+                    <p>Genero:</p>
+                    <section class="linea">
+                        <p class="botones-anime">Comedia</p>
+                        <p class="botones-anime">Romance</p>
+                    </section>
+                    <p>Si quieres ver la serie lo podes ver en TuMangaOnline</p>                    
+                    <section class="centrado-boton">
+                    <a href="https://tmofans.com/library/manga/19969/Renai-Metro" class="ui-btn ui-btn-inline boton">Ver la serie</a>
+                    </section>
+                </section>
+            </section>
+            <!--Comentario-->
+
+            <h3 class="titulo-principal fundadores">No te olvides dejarnos un comentario</h3>
+
+            <section class="centrado-boton">
+                <a href="#nuevo-comentario" data-id="domestic" class="agregar-comentario-link ui-btn ui-btn-inline boton">Agregar comentario</a>
+                <a href="#comentarios" class="ui-btn ui-btn-inline boton"> Ver Comentarios</a>
+            </section>
+
+            <!--Final de comentario-->
+        </div>
+
+        <footer data-role="footer" class="mi-footer">
+            <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+
+        <!--[4.2]. Fullmetal Alchemist-->
+
+    <section data-role="page" id="fullmetal">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1>Fullmetal Alchemist</h1>
+        </header>
+        
+        <div class="ui-content" role="main">
+            <section class="contenido-anime">
+                <section class="img-center">
+                    <img src="imgs/fullmetal-alchemist-banner.jpg" alt="Banner Fullmetal Alchemist" class="img-anime">
+                </section>
+                <section class="texto-anime">            
+                    <h2 class="titulo-principal">Fullmetal Alchemist</h2>
+                    <p>Sinopsis:</p>
+                    <p>La historia se centra en dos hermanos, Edward Elric y Alphonse Elric que rompieron el mayor tabú de la alquimia, la trasmutación humana al tratar de revivir a su fallecida madre; en consecuencia Edward pierde su pierna izquierda y Alphonse pierde todo su cuerpo, Edward para salvar a su hermano sella su alma en una gran armadura de hierro a cambio de su brazo derecho; ahora los dos con un nuevo objetivo buscan desesperadamente la piedra filosofal para poder regresar sus cuerpos a la normalidad...</p>
+                    <p>Estado: Finalizado</p>
+                    <p>Capitulos: 108</p>
+                    <p>Genero:</p>
+                    <section class="linea">
+                        <p class="botones-anime">Acción</p>
+                        <p class="botones-anime">Aventura</p>
+                        <p class="botones-anime">Comedia</p>
+                        <p class="botones-anime">Drama</p>
+                        <p class="botones-anime">Sobrenatural</p>
+                    </section>
+                    <p>Si quieres ver la serie lo podes ver en TuMangaOnline</p>                    
+                    <section class="centrado-boton">
+                    <a href="https://tmofans.com/library/manga/10256/Fullmetal-Alchemist" class="ui-btn ui-btn-inline boton">Ver la serie</a>
+                    </section>
+                </section>
+            </section>
+
+             <!--Comentario-->
+
+             <h3 class="titulo-principal fundadores">No te olvides dejarnos un comentario</h3>
+
+             <section class="centrado-boton">
+                 <a href="#nuevo-comentario" data-id="domestic" class="agregar-comentario-link ui-btn ui-btn-inline boton">Agregar comentario</a>
+                 <a href="#comentarios" class="ui-btn ui-btn-inline boton"> Ver Comentarios</a>
+             </section>
+ 
+             <!--Final de comentario-->
+
+        </div>
+        <footer data-role="footer" class="mi-footer">
+            <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+
+        <!--[4.3]. Moe Kare-->
+
+    <section data-role="page" id="moe">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1>Moe Kare</h1>
+        </header>
+        
+        <div class="ui-content" role="main">
+            <section class="contenido-anime">
+                <section class="img-center">
+                    <img src="imgs/moe-kare-banner.jpg" alt="Banner Moe Kare" class="img-anime">
+                </section>
+                <section class="texto-anime">            
+                    <h2 class="titulo-principal">Moe Kare!!!</h2>
+                    <p>Sinopsis:</p>
+                    <p>Wakamiya Hikaru es una chica de 15 años común y corriente, que asiste a una escuela de secundaria solo para mujeres. Hikaru es una chica normal como cualquier chica de su edad, exceptuando el hecho de que es una otaku, cuya pasión en la vida es leer manga, específicamente shōjo.
+                    Está tan obsesionada que lo único que hace es soñar con su príncipe azul, al estilo de los manga que lee. Su búsqueda termina cuando un día de regreso a casa, se encuentra con unos chicos. Se topa con un grupo de chicos que intentan robar dinero a un pobre niño. Hikaru al verlos intenta ayudar al niño, pero al hacer esto resulta perjudicada. Tras estos perjuicios causados por su valiente decision es salvada por "su príncipe", un maravilloso y apuesto chico de ojos azules y cabello marrón oscuro.
+                    Este pide recompensa por haberla salvado y le roba un beso, el primer beso de Hikaru. Luego la critica por ser inexperta y tener un cuerpo poco desarrollado, y para colmo le pone el apodo de Hiyoko (pequeño pollito) </p>
+                    <p>Estado: Finalizado</p>
+                    <p>Capitulos: 8</p>
+                    <p>Genero:</p>
+                    <section class="linea">
+                        <p class="botones-anime">Acción</p>
+                        <p class="botones-anime">Comedia</p>
+                        <p class="botones-anime">Drama</p>
+                        <p class="botones-anime">Romance</p>
+                        <p class="botones-anime">Vida escolar</p>
+                    </section>
+                    <p>Si quieres ver la serie lo podes ver en TuMangaOnline</p>                    
+                    <section class="centrado-boton">
+                    <a href="https://tmofans.com/library/manga/10530/Moe-Kare-" class="ui-btn ui-btn-inline boton">Ver la serie</a>
+                    </section>
+                </section>
+            </section>
+            
+             <!--Comentario-->
+
+             <h3 class="titulo-principal fundadores">No te olvides dejarnos un comentario</h3>
+
+             <section class="centrado-boton">
+                 <a href="#nuevo-comentario" data-id="domestic" class="agregar-comentario-link ui-btn ui-btn-inline boton">Agregar comentario</a>
+                 <a href="#comentarios" class="ui-btn ui-btn-inline boton"> Ver Comentarios</a>
+             </section>
+ 
+             <!--Final de comentario-->
+        </div>
+        <footer data-role="footer" class="mi-footer">
+            <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+			
+        <!--Final descripcion de Manga-->
+
+	  <!--[6]. mi lista-->
+
+    <section data-role="page" id="lista">
+        <header data-role="header">
+            <a href="#menu">Menú</a>
+            <a href="#home" class="ui-btn-right" data-rel="back" data-icon="arrow-l">Volver</a>
+            <h1>Mi lista</h1>
+        </header>
+        
+        <div class="ui-content" role="main">
+            <section class="contenido-anime">
+                <section class="img-center">
+                    <img src="imgs/moe-kare-banner.jpg" alt="Banner Moe Kare" class="img-anime">
+                </section>
+                <section class="texto-anime">            
+                    <h2 class="titulo-principal">Mi lista de animes</h2>
+                    <p>aca podras agregar animes que queres ver en un futuro o que ya viste</p>
+                </section>
+            </section>
+             <h3 class="titulo-principal fundadores">No te olvides dejarnos un comentario</h3>
+
+             <section class="centrado-boton">
+                 <a href="#anime-por-ver" data-id="domestic" class="agregar-comentario-link ui-btn ui-btn-inline boton">animes por ver</a>
+                 <a href="#anime-visto" class="ui-btn ui-btn-inline boton"> Animes que ya vi</a>
+             </section>
+        </div>
+        <footer data-role="footer" class="mi-footer">
+            <p>Carolina B. Herrera - Mauricio A. Mérida - DMTT5A - 2019 - Da vinci</p>
+        </footer>
+    </section>
+			
+        <!--Final descripcion de mi lista-->
+
+    
+    
+</body>
+</html>
